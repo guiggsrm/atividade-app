@@ -1,0 +1,12 @@
+.border-baixa {
+    border-color: var(--bs-success);
+}
+.border-normal {
+    border-color: var(--bs-warning);
+}
+.border-alta {
+    border-color: var(--bs-danger);
+}
+.border-sem-prioridade {
+    border-color: var(--bs-dark);
+}
