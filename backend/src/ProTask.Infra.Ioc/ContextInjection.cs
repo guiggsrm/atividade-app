@@ -7,7 +7,7 @@ namespace ProTask.Infra.Ioc
 {
     public static class ContextInjection
     {
-        public static void AddContext(IServiceCollection services, IConfiguration configuration)
+        public static void AddContext(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<ApplicationDbContext>(opt => opt.UseSqlServer(configuration.GetConnectionString("DefaultConnection"),
                                                                                 b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));

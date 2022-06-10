@@ -10,3 +10,37 @@
 .border-sem-prioridade {
     border-color: var(--bs-dark);
 }
+.navbar-brand > .badge.rounded-pill {
+    padding: 0.5em 0em;
+}
+.page-title {
+    margin: 0;
+    padding: 0;
+    font-size: 1.9em;
+    font-weight: 500;
+}
+.react-bootstrap-table-pagination .dropdown > .dropdown-menu > .dropdown-item > a {
+    display: block;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.logo-box-lg {
+    min-height: 20em;
+}
+h1.logo {
+    font-size: 5em;
+    margin: auto;
+}
+h1.logo > .badge > svg.logo {
+    margin: 0px -15px;
+    border-radius: 50% !important;
+}
+.navbar-brand > .badge > svg.logo {
+    width: 2em;
+    height: 1em;
+}
+img.flag-img {
+    width: 2.5em;
+}

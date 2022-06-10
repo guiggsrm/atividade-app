@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPen, faFaceSmile, faFaceMeh, faFaceFrown, faTrash, faFaceGrinBeamSweat } from '@fortawesome/free-solid-svg-icons'
 
-export default function Task(props) { 
+export default function TaskItem(props) { 
 
     function priorityDescription(param) {
       switch(param){

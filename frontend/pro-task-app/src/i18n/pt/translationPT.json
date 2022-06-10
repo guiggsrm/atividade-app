@@ -1,0 +1,15 @@
+{
+    "title.register": "Registrar",
+    "title.login": "Entrar",
+    "btn.register": "Registrar",
+    "btn.login": "Entrar",
+    "btn.logout": "Sair",
+    "label.emailAddress": "E-mail",
+    "label.password": "Senha",
+    "label.name": "Nome",
+    "placeholder.enterEmail": "Digite um e-mail",
+    "placeholder.password": "Senha",
+    "placeholder.name": "Nome",
+    "info.weWillNeverShareYourEmail": "Nunca iremos compartilhar seu e-mail",
+    "error.required": "Obrigatório"
+}

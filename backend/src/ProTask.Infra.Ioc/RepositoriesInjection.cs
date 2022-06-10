@@ -6,9 +6,10 @@ namespace ProTask.Infra.Ioc
 {
     public static class RepositoriesInjection
     {
-        public static void AddRepositories(IServiceCollection services)
+        public static void AddRepositories(this IServiceCollection services)
         {
             services.AddScoped<ITaskRepository, TasksRepository>();
+            services.AddScoped<IClientRepository, ClientRepository>();
         }
     }
 }

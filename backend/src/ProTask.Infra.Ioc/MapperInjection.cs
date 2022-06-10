@@ -5,7 +5,7 @@ namespace ProTask.Infra.Ioc
 {
     public static class MapperInjection
     {
-        public static void AddMapper(IServiceCollection services)
+        public static void AddMapper(this IServiceCollection services)
         {
             services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
         }

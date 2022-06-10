@@ -8,13 +8,17 @@ namespace ProTask.Infra.Ioc
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
             // Add context
-            ContextInjection.AddContext(services, configuration);
+            services.AddContext(configuration);
             // Add repositories
-            RepositoriesInjection.AddRepositories(services);
+            services.AddRepositories();
             // Add services
-            ServicesInjection.AddServices(services);
+            services.AddServices();
             // Add mapper
-            MapperInjection.AddMapper(services);
+            services.AddMapper();
+            // Add identity
+            services.AddIdentity(configuration);
+            // Add JWT token
+            services.AddJwt(configuration);
 
             return services;
         }

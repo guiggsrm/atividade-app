@@ -13,8 +13,8 @@ namespace ProTask.Api.Controllers
 
         public TasksController(ILogger<TasksController> logger, ITasksService taskService)
         {
-            _logger = logger;
-            _taskService = taskService;
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            _taskService = taskService ?? throw new ArgumentNullException(nameof(taskService));
         }
 
         [HttpGet]
